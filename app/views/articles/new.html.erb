@@ -1,0 +1,9 @@
+<div class="form-style-9">
+		<h1>New Article</h1>
+		<%= render "form", article: @article %>
+		<% flash.each do |type, msg| %>
+			<div>
+				<%= msg %>
+			</div>
+		<% end %>
+</div>
